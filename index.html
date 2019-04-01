@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+        <link href='//fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900' rel='stylesheet'
+            type='text/css'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/main.css">
+        <title>Toan Nguyen - Web Developer/Designer</title>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+        <!-- Scroll to top button -->
+        <button id="scrollToTop" title="To infinity and beyond!">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
+                <g id="scrolldown" transform="translate(-669.5 -710.121)">
+                    <path class="scrolldown-path" id="Path_222" data-name="Path 222"
+                        d="M660.477,724.121l12.5,14,12.5-14" transform="translate(10.023 -7)" fill="none"
+                        stroke="#ad5524" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                </g>
+            </svg>
+        </button>
+
+        <!-- HERO SECTION -->
+        <header>
+            <!-- Navigation -->
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="#hero"><img src="/assets/logo-dark.svg" alt="tn logo" width="64px"></a>
+                </div>
+                <div class="nav-menu">
+                    <nav id="desktopNav">
+                        <ul>
+                            <li><a href="#hero" class="navlink">Home</a></li>
+                            <li><a href="#about" class="navlink">About Me</a></li>
+                            <li><a href="#services" class="navlink">What I Do</a></li>
+                            <li><a href="#portfolio" class="navlink">My Portfolio</a></li>
+                            <li><a href="#contact" class="navlink">Contact Me</a></li>
+                        </ul>
+                    </nav>
+                    <input type="checkbox" class="nav-toggle" id="nav-toggle">
+
+                    <nav id="smallNav">
+                        <ul>
+                            <li><a href="#hero" class="navlink">Home</a></li>
+                            <li><a href="#about" class="navlink">About Me</a></li>
+                            <li><a href="#services" class="navlink">What I Do</a></li>
+                            <li><a href="#portfolio" class="navlink">My Portfolio</a></li>
+                            <li><a href="#contact" class="navlink">Contact Me</a></li>
+                        </ul>
+                    </nav>
+                    <label for="nav-toggle" class="nav-toggle-label">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+        </header>
+        <section class="section" id="hero">
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img id="hero-image" src="/assets/illustration-1.svg" alt="">
+                </div>
+                <div class="hero-text">
+                    <div data-aos="zoom-in-up" data-aos-duration="2000">
+                        <h1>Toan Nguyen</h1>
+                        <div class="titles">
+                            <h3>web developer</h3>
+                            <h3>graphic designer</h3>
+                        </div>
+                    </div>
+
+                    <a href="#about"><img src="/assets/scrolldown.svg" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="about-container">
+                    <div class="graphic-holder" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="/assets/illustration-2.svg" alt="">
+                    </div>
+                    <div class="about-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="750">
+                        <div class="about-text">
+                            <h1>I'm <strong>TOAN</strong></h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae maxime voluptatem expedita
+                                ab suscipit voluptates doloremque harum adipisci necessitatibus esse ducimus numquam
+                                consequuntur, excepturi quidem ut, delectus laborum atque id!</p>
+                        </div>
+
+                        <div class="skill-area">
+                            <h4>My Skills</h4>
+                            <h6>HTML</h6>
+                            <div class="skillbar skillbar1">80%</div>
+                            <h6>CSS</h6>
+                            <div class="skillbar skillbar2">70%</div>
+                            <h6>JAVASCRIPT</h6>
+                            <div class="skillbar skillbar3">40%</div>
+                            <h6>GRAPHIC DESIGN</h6>
+                            <div class="skillbar skillbar4">80%</div>
+                        </div>
+
+                        <div class="about-buttons">
+                            <a class="about-btn about-btn1" href="#">My Resume</a>
+                            <a class="about-btn about-btn2" href="#">Get In Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="heading-line"></div>
+                    <div class="heading">
+                        <h4>What I Do</h4>
+                    </div>
+                </div>
+                <div class="services">
+                    <div class="service">
+                        <div class="service-icon" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="/assets/front-end-webdev.svg" alt="web development icon">
+                        </div>
+                        <h5>Front-End<br>Web Development</h5>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="/assets/web-design.svg" alt="web design icon">
+                            <h5>Website<br>Design</h5>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon" data-aos="fade-left" data-aos-duration="1000">
+                            <img src="/assets/graphic-design.svg" alt="graphic design icon">
+                            <h5>Graphic<br>Design</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-bg-strip"></div>
+        </section>
+
+        <!-- PORTFOLIO SECTION -->
+        <section class="section" id="portfolio">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="heading-line"></div>
+                    <div class="heading">
+                        <h4>My Portfolio</h4>
+                    </div>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="project" data-aos="flip-left" data-aos-duration="750" data-aos-delay="0">
+                        <img class="project-img"
+                            src="https://images.unsplash.com/photo-1426024120108-99cc76989c71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80"
+                            alt="">
+                        <div class="project-info">
+                            <h4>Project Name</h4>
+                            <h5>Project Type</h5>
+                            <div class="project-btn">
+                                <a href="">View Project</a>
+                                <a href=""><i class="fab fa-github fa-1x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project" data-aos="flip-left" data-aos-duration="750" data-aos-delay="500">
+                        <img class="project-img"
+                            src="https://images.unsplash.com/photo-1426024120108-99cc76989c71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80"
+                            alt="">
+                        <div class="project-info">
+                            <h4>Project Name</h4>
+                            <h5>Project Type</h5>
+                            <div class="project-btn">
+                                <a href="">View Project</a>
+                                <a href=""><i class="fab fa-github fa-1x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project" data-aos="flip-left" data-aos-duration="750" data-aos-delay="1000">
+                        <img class="project-img"
+                            src="https://images.unsplash.com/photo-1426024120108-99cc76989c71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80"
+                            alt="">
+                        <div class="project-info">
+                            <h4>Project Name</h4>
+                            <h5>Project Type</h5>
+                            <div class="project-btn">
+                                <a href="">View Project</a>
+                                <a href=""><i class="fab fa-github fa-1x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="heading-line"></div>
+                    <div class="heading">
+                        <h4>Get In Touch</h4>
+                    </div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-content-container">
+                        <div class="contact-text" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                            <h2>Say <strong>Hello!</strong></h2>
+                            <h5>Leave a message and I'll respond back to you ASAP</h5>
+                        </div>
+                        <div class="contact-info" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="contact">
+                                <img src="/assets/phone.svg" alt="phone-icon" class="icon"><span>+1
+                                    (912)-306-5680</span>
+                            </div>
+                            <div class="contact" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0">
+                                <img src="/assets/email.svg" alt="email-icon"
+                                    class="icon"><span>toanmnguyen050692@gmail.com</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="contact-content-container">
+                        <form method="POST" action="form-action.php" class="contact-form" id="contact-form">
+                            <input data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800" type="text"
+                                name="fullname" id="fullname" class="form-input form-control" pattern="[A-Za-z ]+"
+                                maxlength="30" title="Enter a valid name" placeholder="Name" required>
+                            <input data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600" type="tel"
+                                name="phone" id="phone" class="form-input form-control"
+                                pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="123-456-7890" maxlength="12"
+                                placeholder="Phone Number (optional)">
+                            <input data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400" type="email"
+                                name="email" id="email" class="form-input form-control" title="example123@email.com"
+                                placeholder="Email" required>
+                            <textarea data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" name="message"
+                                id="message" cols="30" rows="5" class="form-input form-control" placeholder="Message"
+                                maxlength="500" required></textarea>
+                            <input data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0" type="submit"
+                                id="submit" class="submit-btn" name="submit" value="Send Message">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <div class="bottom-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="76" height="48.397" viewBox="0 0 76 48.397">
+                        <g id="logo-dark" transform="translate(-139 -25)">
+                            <path class="logo-path" id="Path_103" data-name="Path 103"
+                                d="M77.52,65.051a2.053,2.053,0,0,0,0,3.837V68.9L93.9,76.022V72.615L80.467,66.95,93.9,61.324V57.918L77.52,65.037Z"
+                                transform="translate(62.802 -17.725)" />
+                            <path class="logo-path" id="Path_104" data-name="Path 104"
+                                d="M175.025,65.051v-.014l-16.381-7.119v3.406l13.434,5.665-13.434,5.626v3.407L175.025,68.9v-.015a2.053,2.053,0,0,0,0-3.837Z"
+                                transform="translate(38.653 -17.725)" />
+                            <path class="logo-path" id="Path_105" data-name="Path 105"
+                                d="M125.613,55.718l.174,16.089,4.4-1.922-.009-11.21,3.833-1.666L134,69.543c.041.692-.416,3.407-2.429,4.3l-18.517,8.1V72.4l-4.39,1.916-.006,14.491.02-.008v.008l4.375-1.911h0l20.41-8.917c5.12-2.169,5.248-8.2,5.249-8.3l-.035-19.659Z"
+                                transform="translate(53.295 -15.411)" />
+                            <path class="logo-path" id="Path_106" data-name="Path 106"
+                                d="M113.053,63.867l-.026-8.809A3.642,3.642,0,0,1,115,51.816L116.873,51l.024,15.044h0v.7h0V71.7l4.921-2.147L121.8,48.851l16.871-7.363-.008-5.056L113.49,47.4a8.293,8.293,0,0,0-4.849,7.695l.011,10.693Z"
+                                transform="translate(53.299 -11.432)" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                </div>
+                <div class="copyright">
+                    <p>&COPY; 2019 - toannguyenwebdev.com</p>
+                    <p>Designed and developed by Toan Nguyen</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="text/javascript">
+            // Animate On Scroll Library
+            // Initialize AOS
+            AOS.init();
+
+            // SMOOTH SCROLLING
+            // Select all links with hashes
+            $('a[href*="#"]')
+                // Remove links that don't actually link to anything
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .click(function (event) {
+                    // On-page links
+                    if (
+                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                        location.hostname == this.hostname
+                    ) {
+                        // Figure out element to scroll to
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        // Does a scroll target exist?
+                        if (target.length) {
+                            // Only prevent default if animation is actually gonna happen
+                            event.preventDefault();
+                            $('html, body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000, function () {
+                                // Callback after animation
+                                // Must change focus!
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) { // Checking if the target was focused
+                                    return false;
+                                } else {
+                                    $target.attr('tabindex',
+                                        '-1'); // Adding tabindex for elements not focusable
+                                    $target.focus(); // Set focus again
+                                };
+                            });
+                        }
+                    }
+                });
+
+            /*Scroll to top when arrow up clicked BEGIN*/
+            $(window).scroll(function () {
+                var height = $(window).scrollTop();
+                if (height > 100) {
+                    $('#scrollToTop').fadeIn();
+                } else {
+                    $('#scrollToTop').fadeOut();
+                }
+            });
+            $(document).ready(function () {
+                $("#scrollToTop").click(function (event) {
+                    event.preventDefault();
+                    $("html, body").animate({
+                        scrollTop: 0
+                    }, "slow");
+                    return false;
+                });
+
+            });
+            /*Scroll to top when arrow up clicked END*/
+
+            var $window = $(window);
+            var $elem = $(".skillbar::after");
+
+            function isScrolledIntoView($elem, $window) {
+                var docViewTop = $window.scrollTop();
+                var docViewBottom = docViewTop + $window.height();
+
+                var elemTop = $elem.offset().top;
+                var elemBottom = elemTop + $elem.height();
+
+                return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+            }
+            $(document).on("scroll", function () {
+                if (isScrolledIntoView($elem, $window)) {
+                    $elem.addClass("animate")
+                }
+            });
+        </script>
+    </body>
+
+</html>
