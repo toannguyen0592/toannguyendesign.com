@@ -11,11 +11,12 @@
     box-sizing: border-box
 }
 
-html, body {
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+html,
+body {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 body {
@@ -96,25 +97,35 @@ header::after {
     max-width: 500px;
     min-width: 300px;
     width: 500px;
-    
+
 }
 
 .hero-image img {
     width: 100%;
-    -webkit-animation: updown 1.25s infinite  alternate;
-    animation: updown 1.25s infinite  alternate;
+    -webkit-animation: updown 1.25s infinite alternate;
+    animation: updown 1.25s infinite alternate;
 }
 
 /* Safari */
 @-webkit-keyframes updown {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(20px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
 }
 
 /* Standard */
 @keyframes updown {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(20px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
 }
 
 
@@ -158,8 +169,8 @@ header::after {
 }
 
 .hero-text a:hover {
-    -webkit-animation: updown 1s infinite  alternate;
-    animation: updown 1s infinite  alternate;
+    -webkit-animation: updown 1s infinite alternate;
+    animation: updown 1s infinite alternate;
 }
 
 /* Navigation */
@@ -455,19 +466,59 @@ header::after {
 }
 
 /* Portfolio Section */
+section#portfolio {
+    min-height: 100vh;
+    height: 100%;
+}
+
 .portfolio-grid {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-column-gap: 50px;
     grid-row-gap: 50px;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#filterBtnContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .project {
     width: 100%;
     height: 300px;
     position: relative;
+    display: none;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 0;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn:hover {
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+
+.btn.active {
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+.show {
+    display: block;
 }
 
 .project:hover .project-info {
@@ -978,15 +1029,15 @@ footer .container div:not(:last-child) {
         text-align: center;
     }
 
-     /* Footer */
-     .copyright {
+    /* Footer */
+    .copyright {
         flex-direction: column;
     }
-    
+
     .copyright p {
         padding: 0;
     }
-    
+
     .copyright p:last-child {
         border: none;
     }
@@ -1105,5 +1156,5 @@ footer .container div:not(:last-child) {
     #submit {
         width: 100%;
     }
-   
+
 }
