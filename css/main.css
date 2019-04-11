@@ -511,10 +511,10 @@ section#portfolio {
     border-bottom: 2px solid var(--main-color);
 }
 
-
 .btn.active {
     color: var(--main-color);
     border-bottom: 2px solid var(--main-color);
+    outline: none;
 }
 
 .show {
@@ -541,7 +541,6 @@ section#portfolio {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 50px;
     opacity: 0;
     transition: 0.5s ease;
     position: absolute;
@@ -549,11 +548,22 @@ section#portfolio {
     z-index: 0;
 }
 
+.project-text {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;    
+}
+
 .project-info h4,
 .project-info h5 {
+    width: 100%;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-align: center;
     color: var(--second-color);
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .project-btn {
