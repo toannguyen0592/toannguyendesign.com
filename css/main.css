@@ -618,7 +618,7 @@ section#portfolio {
     color: var(--third-color);
 }
 
-.fomr-input:focus {
+.form-input:focus {
     outline: none;
     border-bottom: 1.5px solid var(--main-color);
 }
@@ -678,6 +678,7 @@ section#portfolio {
 footer {
     background: var(--third-color);
     padding: 50px 0;
+    margin-top: 50px;
 }
 
 footer .logo-path {
