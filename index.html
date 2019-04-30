@@ -433,24 +433,6 @@
             });
             /*Scroll to top when arrow up clicked END*/
 
-            var $window = $(window);
-            var $elem = $(".skillbar::after");
-
-            function isScrolledIntoView($elem, $window) {
-                var docViewTop = $window.scrollTop();
-                var docViewBottom = docViewTop + $window.height();
-
-                var elemTop = $elem.offset().top;
-                var elemBottom = elemTop + $elem.height();
-
-                return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-            }
-            $(document).on("scroll", function () {
-                if (isScrolledIntoView($elem, $window)) {
-                    $elem.addClass("animate")
-                }
-            });
-
             /*** Project Filter Functions ***/
             filterSelection("all") // Execute the function and show all columns
             function filterSelection(c) {
