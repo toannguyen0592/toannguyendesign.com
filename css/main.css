@@ -607,6 +607,7 @@ section#portfolio {
 
 .contact-form {
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .form-input {
@@ -618,7 +619,7 @@ section#portfolio {
     color: var(--third-color);
 }
 
-.fomr-input:focus {
+.form-input:focus {
     outline: none;
     border-bottom: 1.5px solid var(--main-color);
 }
@@ -678,6 +679,7 @@ section#portfolio {
 footer {
     background: var(--third-color);
     padding: 50px 0;
+    margin-top: 50px;
 }
 
 footer .logo-path {
@@ -1167,4 +1169,8 @@ footer .container div:not(:last-child) {
         width: 100%;
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c93243ae06f505ad8dcf83f72486b9196301db6d
