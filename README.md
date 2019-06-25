@@ -1,5 +1,6 @@
 # toannguyendesign.com
-Overview
+OVERVIEW
+
 This repository is my own personal portfolio website to showcase my web development and graphic design projects to potential employers and freelance clients. 
 
 The languages and front-end libraries I used to build this website: 
