@@ -240,6 +240,7 @@ header::after {
 
 /* About Section */
 #about {
+    padding-top: 100px;
     display: flex;
     align-items: center;
 }
@@ -466,7 +467,7 @@ header::after {
 }
 
 /* Portfolio Section */
-section#portfolio {
+#portfolio {
     min-height: 100vh;
     height: 100%;
 }
@@ -474,7 +475,7 @@ section#portfolio {
 .portfolio-grid {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 50px;
     grid-row-gap: 50px;
     margin-top: 50px;
@@ -522,7 +523,7 @@ section#portfolio {
 }
 
 .project:hover .project-info {
-    opacity: 1;
+    opacity: 0.9;
 }
 
 .project-img {
@@ -530,6 +531,8 @@ section#portfolio {
     height: 100%;
     position: relative;
     z-index: -1;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 
 .project-info {
@@ -750,6 +753,7 @@ footer .container div:not(:last-child) {
     }
 
     /* About Section */
+
     .about-container {
         width: 100%;
         display: flex;
@@ -815,7 +819,7 @@ footer .container div:not(:last-child) {
 
     /* Portfolio Section */
     .portfolio-grid {
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 50px;
         grid-row-gap: 50px;
     }
@@ -974,6 +978,10 @@ footer .container div:not(:last-child) {
     }
 
     /* About Section */
+    #about {
+        padding-top: 50px;
+    }
+
     .about-container {
         padding: 0;
     }
@@ -1118,6 +1126,10 @@ footer .container div:not(:last-child) {
     }
 
     /* About section */
+#about {
+    padding-top: 0;;
+}
+
     .about-container {
         padding: 50px 25px;
     }
