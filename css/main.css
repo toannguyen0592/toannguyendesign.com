@@ -71,7 +71,7 @@ header::after {
 /* All sections */
 .section {
     height: 100vh;
-    width: 100%;
+    max-width: 100%;
 }
 
 /* All section heading h4 */
@@ -1066,10 +1066,6 @@ footer .container div:not(:last-child) {
 @media screen and (max-width: 500px) {
 
     /* Navigation */
-    .nav-container {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
 
     #smallNav {
         width: 100%;
@@ -1179,5 +1175,11 @@ footer .container div:not(:last-child) {
     /* Contact */
     #submit {
         width: 100%;
+    }
+    
+    @media screen and (min-width: 360px) {
+        html, body {
+            width: 100vw;
+        }
     }
 
