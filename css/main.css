@@ -175,10 +175,18 @@ header::after {
 }
 
 /* Navigation */
+.navbar {
+    background: var(--main-color);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+}
+
 .nav-container {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 10px 25px;
     display: flex;
     flex-direction: row;
     align-items: center;
