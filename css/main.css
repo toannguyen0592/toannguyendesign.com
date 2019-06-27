@@ -58,7 +58,6 @@ body {
 header {
     background: var(--main-color);
     width: 100%;
-    position: fixed;
     z-index: 10;
 
 }
