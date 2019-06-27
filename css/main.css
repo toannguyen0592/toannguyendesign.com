@@ -1181,5 +1181,8 @@ footer .container div:not(:last-child) {
         html, body {
             width: 100vw;
         }
+        
+        section {
+            width: 100%;
     }
 
