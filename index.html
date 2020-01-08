@@ -305,7 +305,7 @@
                         <div class="contact-content-container">
                             <form method="POST" class="contact-form gform" id="contact-form"
                                 data-email="toanmnguyen050692@gmail.com"
-                                action="https://script.google.com/macros/s/AKfycbxYNl2v0dSPSK4z0ELjE8loEte7mMa2kdgctQJg3jP78H-kgd2r/exec">
+                                action="https://script.google.com/macros/s/AKfycbxYNl2v0dSPSK4z0ELjE8loEte7mMa2kdgctQJg3jP78H-kgd2r/exec" onsubmit="return submitUserForm();">
                                 <div style="display:none" class="thankyou_message">
                                     <h2>Thank you! I will get back to you soon!</h2>
                                 </div>
@@ -322,7 +322,8 @@
                                     class="form-input form-control" placeholder="Message" maxlength="500"
                                     required></textarea>
                                 <div class="g-recaptcha" data-sitekey="66Lfj0J8UAAAAANH0iBKuyHZDlUH3YC7XKlhU9apC"
-                                    required></div>
+                                    data-callback="verifyCaptcha></div>
+                                <div id="g-recaptcha-error"></div>
                                 <input type="submit" id="submit" class="submit-btn" value="Send Message">
                             </form>
                         </div>
@@ -377,6 +378,20 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            function submitUserForm() {
+                let response = grecaptcha.getResponse();
+                if (response.length == 0) {
+                    document.getElementById('g-recaptcha-error').innerHTML = "<span style="color:red;">This field is required</span>";
+                    return false;        
+                }
+                return true;            
+            }
+                            
+            function verifyCaptcha() {
+                document.getElementById('g-recaptcha-error').innerHTML = "";            
+            }                
+        </script>
     </body>
 
 </html>
