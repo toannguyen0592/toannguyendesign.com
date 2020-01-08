@@ -322,7 +322,7 @@
                                 <div class="g-recaptcha" data-sitekey="6LcHjs0UAAAAACu6fINt2KyzBFIaoSk8kNSTd11i"
                                     data-callback="verifyCaptcha"></div>
                                 <div id="g-recaptcha-error"></div>
-                                <input type="submit" id="submit" class="submit-btn" value="Send Message">
+                                <input type="submit" id="submit" class="submit-btn" onclick="google.script.run.withSuccessHandler(showResp).processForm(this.parentNode)" value="Send Message">
                             </form>
                         </div>
                     </div>
@@ -390,6 +390,12 @@
                 return true;
             });        
         </script>
+        <script>
+            function showResp(resp) {
+                alert(resp)
+                console.log(resp)
+            }
+    </script>
     </body>
 
 </html>
