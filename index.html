@@ -302,8 +302,7 @@
                             </div>
                         </div>
                         <div class="contact-content-container">
-                            <form method="POST" class="contact-form gform" id="contact-form" onsubmit="return submitUserForm();"
-                                data-email="toanmnguyen050692@gmail.com"
+                            <form method="POST" class="contact-form gform" id="contact-form" data-email="toanmnguyen050692@gmail.com"
                                 action="https://script.google.com/macros/s/AKfycbxYNl2v0dSPSK4z0ELjE8loEte7mMa2kdgctQJg3jP78H-kgd2r/exec">
                                 <div style="display:none" class="thankyou_message">
                                     <h2>Thank you! I will get back to you soon!</h2>
@@ -379,18 +378,17 @@
         <script src="https://www.google.com/recaptcha/api.js"></script>
         <script src="js/main.js"></script>
         <script>
-            function submitUserForm() {
-                let response = grecaptcha.getResponse();
-                if (response.length == 0) {
-                    document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required</span>';
-                    return false;        
+            document.getElementById("contact-form").addEventListener("submit",function(evt) {  
+                var response = grecaptcha.getResponse();
+                if(response.length == 0) { 
+                    //reCaptcha not verified
+                    alert("please verify you are human!"); 
+                    evt.preventDefault();
+                    return false;
                 }
-                return true;            
-            }
-                            
-            function verifyCaptcha() {
-                document.getElementById('g-recaptcha-error').innerHTML = '';            
-            }                
+                //captcha verified
+                return true;
+            });        
         </script>
     </body>
 
