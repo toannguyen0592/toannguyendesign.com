@@ -322,7 +322,7 @@
                                     class="form-input form-control" placeholder="Message" maxlength="500"
                                     required></textarea>
                                 <div class="g-recaptcha" data-sitekey="6LcHjs0UAAAAACu6fINt2KyzBFIaoSk8kNSTd11i"
-                                    data-callback="verifyCaptcha></div>
+                                    data-callback="verifyCaptcha"></div>
                                 <div id="g-recaptcha-error"></div>
                                 <input type="submit" id="submit" class="submit-btn" value="Send Message">
                             </form>
@@ -382,14 +382,14 @@
             function submitUserForm() {
                 let response = grecaptcha.getResponse();
                 if (response.length == 0) {
-                    document.getElementById('g-recaptcha-error').innerHTML = "<span style="color:red;">This field is required</span>";
+                    document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required</span>';
                     return false;        
                 }
                 return true;            
             }
                             
             function verifyCaptcha() {
-                document.getElementById('g-recaptcha-error').innerHTML = "";            
+                document.getElementById('g-recaptcha-error').innerHTML = '';            
             }                
         </script>
     </body>
