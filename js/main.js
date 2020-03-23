@@ -108,3 +108,17 @@ for (var i = 0; i < btns.length; i++) {
         this.className += " active";
     });
 }
+
+function changeNavBarBg() {
+    var navbar = document.querySelector(".navbar");
+    var menuToggler = document.getElementById("nav-toggle");
+    var togglerLabel = document.querySelector(".nav-toggle-label span");
+
+    if (menuToggler.checked) {
+        navbar.style.background = "var(--third-color)";
+        togglerLabel.style.background = "url(/assets/hammenu-02.svg)";
+    } else {
+        navbar.style.background = "var(--main-color)";
+        togglerLabel.style.background = "url(/assets/hammenu-01.svg)";
+    }
+}

@@ -34,7 +34,7 @@
 
             <!-- HERO SECTION -->
             <!-- Navigation -->
-            <div class="navbar">
+            <div class="navbar" id="navbar">
                 <div class="nav-container">
                     <div class="logo">
                         <a href="#hero"><img src="/assets/logo-dark.svg" alt="tn logo" width="64px"></a>
@@ -49,7 +49,7 @@
                                 <li><a href="#contact" class="navlink">Contact Me</a></li>
                             </ul>
                         </nav>
-                        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+                        <input type="checkbox" class="nav-toggle" id="nav-toggle" onclick="changeNavBarBg()">
 
                         <nav id="smallNav">
                             <ul>
@@ -99,7 +99,7 @@
                                 <p>
                                     I’m a graphic designer and front-end web developer based in Savannah, Georgia who
                                     has a
-                                    heart for design and a desire for creating modern websites. Having knowledge and
+                                    heart for design and a desire for developing websites. Having knowledge and
                                     experience in graphic design allows me to apply my design expertise into dynamic web
                                     development technology to create eye-catching websites and user-friendly web
                                     applications. </p>
@@ -165,7 +165,7 @@
                     </div>
 
                     <div class="portfolio-grid">
-                         <div class="project webdev" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
+                        <div class="project webdev" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
                             <img class="project-img" src="/assets/dynamicClock.png" alt="">
                             <div class="project-info">
                                 <div class="project-text">
@@ -174,12 +174,14 @@
                                 </div>
                                 <div class="project-btn">
                                     <a href="https://toannguyen0592.github.io/dynamic-background-changing-clock/"
-                                       target="_blank">View Project</a>
-                                    <a href="https://github.com/toannguyen0592/dynamic-background-changing-clock" target="_blank"><i class="fab fa-github fa-1x"></i></a>
+                                        target="_blank">View Project</a>
+                                    <a href="https://github.com/toannguyen0592/dynamic-background-changing-clock"
+                                        target="_blank"><i class="fab fa-github fa-1x"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="project webdev design" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
+                        <div class="project webdev design" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-delay="350">
                             <img class="project-img" src="/assets/RenoDocs.png" alt="">
                             <div class="project-info">
                                 <div class="project-text">
@@ -187,12 +189,12 @@
                                     <h5>Wordpress Web Design/Development</h5>
                                 </div>
                                 <div class="project-btn">
-                                    <a href="http://renovationdoctors.com/"
-                                       target="_blank">View Project</a>                
+                                    <a href="http://renovationdoctors.com/" target="_blank">View Project</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="project webdev design" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
+                        <div class="project webdev design" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-delay="350">
                             <img class="project-img" src="/assets/gabiomass.PNG" alt="">
                             <div class="project-info">
                                 <div class="project-text">
@@ -200,8 +202,7 @@
                                     <h5>Wordpress Web Design/Development</h5>
                                 </div>
                                 <div class="project-btn">
-                                    <a href="https://www.gabiomass.com/"
-                                       target="_blank">View Project</a>                
+                                    <a href="https://www.gabiomass.com/" target="_blank">View Project</a>
                                 </div>
                             </div>
                         </div>
@@ -210,7 +211,7 @@
                                 alt="toannguyendesign thumbnail">
                             <div class="project-info">
                                 <div class="project-text">
-                                    <h4>toannguyendesign</h4>
+                                    <h4>toan nguyen design</h4>
                                     <h5>portfolio website</h5>
                                 </div>
                                 <div class="project-btn">
@@ -228,27 +229,12 @@
                                     <h5>e-commerce website</h5>
                                 </div>
                                 <div class="project-btn">
-                                    <a href="https://myecomcart.000webhostapp.com"
-                                        target="_blank">View Project</a>
+                                    <a href="https://myecomcart.000webhostapp.com" target="_blank">View Project</a>
                                     <a href="https://github.com/toannguyen0592/Ecart-Simple-E-commerce-Website"
                                         target="_blank"><i class="fab fa-github fa-1x"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <!--<div class="project webdev" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
-                            <img class="project-img" src="/assets/rekevents.PNG" alt="">
-                            <div class="project-info">
-                                <div class="project-text">
-                                    <h4>RekEvents</h4>
-                                    <h5>Web Application</h5>
-                                </div>
-                                <div class="project-btn">
-                                    <a href="https://rekevents.com/" target="_blank">View Project</a>
-                                    <a href="" target="_blank"><i class="fab fa-github fa-1x"></i></a>
-                                </div>
-                            </div>
-                        </div>-->
-
                         <div class="project design" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
                             <img class="project-img" src="/assets/legacynailsmenu-flat.jpg" alt="">
                             <div class="project-info">
@@ -278,13 +264,14 @@
                                         target="_blank"><i class="fab fa-behance fa-1x"></i></a>
                                 </div>
                             </div>
-                        </div>                                          
-                    </div>
-                    <div class="col-lg-12" style="width: 100%; text-align: center;" data-aos="fade-up"
-                            data-aos-duration="1000" data-aos-delay="400">
-                            <p>Check out my other design projects at my <a href="https://www.behance.net/ToanNguyen0592"
-                                    target="_blank">Behance page</a></p>
                         </div>
+                    </div>
+
+                </div>
+                <div class="externalLink col-lg-12" style="width: 100%; text-align: center;" data-aos="fade-up"
+                    data-aos-duration="1000" data-aos-delay="400">
+                    <p>Check out my other design projects at my <a href="https://www.behance.net/ToanNguyen0592"
+                            target="_blank">Behance page</a></p>
                 </div>
             </section>
 
@@ -316,7 +303,8 @@
                             </div>
                         </div>
                         <div class="contact-content-container">
-                            <form method="POST" class="contact-form gform" id="contact-form" data-email="toanmnguyen050692@gmail.com"
+                            <form method="POST" class="contact-form gform" id="contact-form"
+                                data-email="toanmnguyen050692@gmail.com"
                                 action="https://script.google.com/macros/s/AKfycbxYNl2v0dSPSK4z0ELjE8loEte7mMa2kdgctQJg3jP78H-kgd2r/exec">
                                 <div style="display:none" class="thankyou_message">
                                     <h2>Thank you! I will get back to you soon!</h2>
@@ -336,7 +324,9 @@
                                 <div class="g-recaptcha" data-sitekey="6LcHjs0UAAAAACu6fINt2KyzBFIaoSk8kNSTd11i"
                                     data-callback="verifyCaptcha"></div>
                                 <div id="g-recaptcha-error"></div>
-                                <input type="submit" id="submit" class="submit-btn" onclick="google.script.run.withSuccessHandler(showResp).processForm(this.parentNode)" value="Send Message">
+                                <input type="submit" id="submit" class="submit-btn"
+                                    onclick="google.script.run.withSuccessHandler(showResp).processForm(this.parentNode)"
+                                    value="Send Message">
                             </form>
                         </div>
                     </div>
@@ -392,11 +382,11 @@
         <script src="https://www.google.com/recaptcha/api.js"></script>
         <script src="js/main.js"></script>
         <script>
-            document.getElementById("contact-form").addEventListener("submit",function(evt) {  
+            document.getElementById("contact-form").addEventListener("submit", function (evt) {
                 var response = grecaptcha.getResponse();
-                if(response.length == 0) { 
+                if (response.length == 0) {
                     //reCaptcha not verified
-                    document.getElementById("g-recaptcha-error").innerHTML = "Please verify you are human!"; 
+                    document.getElementById("g-recaptcha-error").innerHTML = "Please verify you are human!";
                     evt.preventDefault();
                     return false;
                 }
@@ -409,7 +399,7 @@
                 alert(resp)
                 console.log(resp)
             }
-    </script>
+        </script>
     </body>
 
 </html>
